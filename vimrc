@@ -20,6 +20,9 @@ Plug 'tpope/vim-surround'
 " Comment stuff out
 Plug 'tpope/vim-commentary'
 
+" Markdown Syntax
+Plug 'tpope/vim-markdown'
+
 " Vim Markdown compilation etc
 Plug 'vim-pandoc/vim-rmarkdown'
 
@@ -33,7 +36,17 @@ Plug 'machakann/vim-highlightedyank'
 " Vim Slime - send stuff to screen
 Plug 'jpalardy/vim-slime'
 
+" Vimtex
+Plug 'lervag/vimtex'
+
 call plug#end()
+
+""""""""""""
+" MARKDOWN "
+""""""""""""
+
+let g:pandoc#modules#disabled = ["folding"]
+let g:pandoc#spell#enabled = 0
 
 """""""""""
 " GENERAL "
